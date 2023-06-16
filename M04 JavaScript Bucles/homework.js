@@ -119,6 +119,10 @@ function esEntero(num) {
    }else{
       return false
    }
+   // if (Number.isInteger(num)===true){
+   //   return true
+   //}else
+   // return false
 }
 
 function fizzBuzz(num) {
