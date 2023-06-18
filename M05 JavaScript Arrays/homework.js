@@ -145,14 +145,17 @@ function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
    // Tu código:
-   let numberStr = num.toString();
-   return (parseInt(numberStr[0]) === 9);
+   var numtostring = num.toString()
+   return (parseInt(numtostring[0])===9)
  }
 
 function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
    // Caso contrario retornar false.
    // Tu código:
+   for (i=0;i<array.length;i++){
+      return array[i]===array[i+1]  
+   }
 }
 
 function mesesDelAño(array) {
