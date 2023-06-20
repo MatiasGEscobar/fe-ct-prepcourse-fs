@@ -163,18 +163,31 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+if (array.includes ("Enero"))if (array.includes ("Marzo"))if (array.includes ("Noviembre")){
+   return array.filter (mes => mes === "Enero" || mes === "Marzo"|| mes === "Noviembre");
+}   return "No se encontraron los meses pedidos"
 }
 
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   var resultado=[]
+   for (i = 0; i <= 10; i++ ){
+   resultado.push (i * 6)}
+   return resultado
 }
 
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   var mayores=[]
+   for (i=0; i<array.length;i++){
+   if (array[i]>100){
+      mayores.push(array[i])
+   }
+   }return mayores 
 }
 
 /* ----------------------------------------------------------------------------------
@@ -188,7 +201,21 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   var result =[]
+   var i=0
+   var suma = num
+   var mensaje=""
+   while(i<10){
+      suma += 2
+      result.push(suma)
+      if(result[i]===i){
+         mensaje = "Se interrumpió la ejecución"; break;
+      }
+      i++
 }
+return mensaje || result
+}
+
 
 function continueStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
@@ -197,6 +224,15 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   var result =[]
+   var i=0
+   var suma = num
+   for(i=0;i<10;i++){
+      if(i!==5){
+      suma += 2
+      result.push(suma)}
+      else if (i===5) continue;}
+return result
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
