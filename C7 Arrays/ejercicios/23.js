@@ -6,7 +6,7 @@ function breakStatement(num) {
   var nuevoNum = [];
 
   for (let i = 0; i < 10; i++) {
-    num = num + 2;  // Incrementa num en 2
+    num += 2;  // Incrementa num en 2
     if (num === i) {  // Verifica si el valor de num es igual a i
       return "Se interrumpió la ejecución";
     }

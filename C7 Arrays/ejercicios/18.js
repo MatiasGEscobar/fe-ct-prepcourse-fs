@@ -5,7 +5,7 @@ function promedioResultadosTest(resultadosTest) {
   var promedio = 0;
 
   for (let i = 0; i < resultadosTest.length; i++) {
-     suma = suma + resultadosTest[i];    
+     suma +=  resultadosTest[i];    
   }
   promedio = suma / resultadosTest.length;
   return promedio;

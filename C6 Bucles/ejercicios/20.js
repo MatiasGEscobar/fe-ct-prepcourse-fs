@@ -6,7 +6,7 @@ function sumarHastaNConBreak(n) {
    var acu = 0
 
    for (let i = 0; i <= n; i++) {
-      acu = acu + i;
+      acu += i;
       if (acu >=100){
          break;
       }

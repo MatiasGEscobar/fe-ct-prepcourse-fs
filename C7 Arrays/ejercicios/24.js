@@ -14,7 +14,7 @@ function continueStatement(num) {
       continue;
     }
   
-    num = num +2
+    num += 2
     nuevoNum.push(num);
   }
 

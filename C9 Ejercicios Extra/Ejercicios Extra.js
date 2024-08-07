@@ -99,10 +99,10 @@ function deleteAbc(string) {
     }
     else{
       arr2.push(arr[i])
+    }
   }
-  }
-  var string2 = arr2.join('');
-  return string2;
+    return arr2.join('');
+ 
 }
 
 function sortArray(arrayOfStrings) {
